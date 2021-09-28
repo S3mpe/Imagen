@@ -24,39 +24,12 @@ namespace Imagen
         {
             InitializeComponent();
         }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Opacity = 1;
-        }
-
-        private void MediaRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Opacity = 0.6;
-        }
-        private void BajaRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Opacity = 0.3;
-        }
-
-        private void RellenoRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Stretch = Stretch.Fill;
-        }
-
-        private void UniformeRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Stretch = Stretch.Uniform;
-        }
-
-        private void RellenoUniformeRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Stretch = Stretch.UniformToFill;
-        }
-
-        private void SinAjusteRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ImagenImage.Stretch = Stretch.None;
-        }
+        private void RadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Opacity = 1;
+        private void MediaRadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Opacity = 0.6;
+        private void BajaRadioButton_Checked(object sender, RoutedEventArgs e) =>ImagenImage.Opacity = 0.3;
+        private void RellenoRadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Stretch = Stretch.Fill;
+        private void UniformeRadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Stretch = Stretch.Uniform;
+        private void RellenoUniformeRadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Stretch = Stretch.UniformToFill;
+        private void SinAjusteRadioButton_Checked(object sender, RoutedEventArgs e) => ImagenImage.Stretch = Stretch.None;
     }
 }
